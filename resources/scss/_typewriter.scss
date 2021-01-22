@@ -1,0 +1,36 @@
+#parent {
+    white-space: nowrap;
+    overflow: hidden;
+    height: 40px;
+    position: relative;
+}
+
+#border {
+    border-bottom: solid 3px rgba(0,255,0,.75);
+    position: absolute;
+    right: -7px;
+    width: 20px;
+}
+
+/* Animation */
+#parent {
+    animation: animated-text 2s steps(30,end) 1s 1 normal both
+}
+
+#border {
+    animation: animated-cursor 600ms steps(30,end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+    from{width: 0;}
+    to{width: 100%;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+    from{border-bottom-color: rgba(0,255,0,.75);}
+    to{border-bottom-color: transparent;}
+}

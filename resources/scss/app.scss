@@ -1,0 +1,12 @@
+/* # App
+---------------------------------------------------------------------------------------------------- */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'elements/index';
+@import 'components/index';
+@import 'themes/index';
+@import 'typography';
+@import 'typewriter';
